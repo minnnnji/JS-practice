@@ -1,0 +1,50 @@
+:root{
+    --mainwhite: #f2fdff;
+    --mainblue: #3292cc;
+}
+.max-height{
+    min-height: 100vh;
+}
+body{
+    background: var(--mainwhite);
+}
+.img-container{
+    min-height: 60vh;
+    background: url(./img/img1.jpeg) center/contain fixed no-repeat;
+    border: 0.5rem solid var(--mainblue);
+    border-radius: 0.5rem;
+    position: relative;
+}
+@media screen and (min-width: 768px){
+    .img-container{
+        min-height: 80vh;
+    }
+}
+
+.btn-left{
+    position:absolute;
+    top: 50%;
+    left: 0;
+    background: var(--mainblue);
+    color: var(--mainwhite) !important;
+    transform: translate(-50%,-50%);
+    border: 0.2rem solid var(--mainblue);
+    font-size: 1.2rem;
+}
+
+.btn-right{
+    position:absolute;
+    top: 50%;
+    right: 0;
+    background: var(--mainblue);
+    color: var(--mainwhite) !important;
+    transform: translate(50%,-50%);
+    border: 0.2rem solid var(--mainblue);
+    font-size: 1.2rem;
+}
+
+.btn-left:hover, .btn-right:hover{
+    border-color: var(--mainblue);
+    background: var(--mainwhite);
+    color: var(--mainblue) !important;
+}
